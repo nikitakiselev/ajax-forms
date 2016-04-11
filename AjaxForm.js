@@ -51,7 +51,7 @@ AjaxForm.prototype.populateErrors = function(ajaxForm, errorsJson)
 
         if ( ! $helpBlock.length && ajaxForm.config.autoHelpBlock)
         {
-            $helpBlock = $('<div class="' + ajaxForm.config.controlErrorBlock + '"></div>');
+            $helpBlock = $('<div class="' + ajaxForm.config.controlErrorBlock.replace('.', '') + '"></div>');
             $formGroup.append($helpBlock);
         }
 
