@@ -25,7 +25,7 @@ AjaxForm.prototype.init = function(el, config) {
         }
     };
 
-    this.config = Object.assign({}, defaultConfig, config);
+    this.config = $.extend({}, defaultConfig, config);
 };
 
 AjaxForm.prototype.initEvents = function() {
